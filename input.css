@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #383838;
+  --primary: #e65e29;
+  --success: #00b906;
+  --star: #ffb900;
+  --destructive: #c51823;
+  --muted: #f7f7f7;
+  --muted-variant: #0000004d;
+  --icon-foreground: #747474;
+
+  --best-seller: #ffffff;
+  --wishlist: #ffffff;
+  --wishlist-foreground: #e65e29;
+  --selected-border: #cccccc;
+
+  --gradient-1: #e9c053;
+  --gradient-2: #ff7d75;
+  --btn-minus: #ffffff;
+  --btn-plus: linear-gradient(121.48deg, #e9c053 18.72%, #ff7d75 73.08%);
+  --bottom-nav: linear-gradient(
+    184.6deg,
+    rgba(255, 255, 255, 0) 0.98%,
+    #ffffff 41.19%
+  );
+}
+
+.dark {
+  --background: #0a0a0c;
+  --foreground: #ffffff;
+  --primary: #e65e29;
+  --success: #00ff09;
+  --star: #f5d100;
+  --destructive: #ff0010;
+  --muted: #1d1d21;
+  --muted-variant: #ffffffcc;
+  --icon-foreground: #ffffff;
+
+  --best-seller: #00ff080d;
+  --wishlist: #e65e29;
+  --wishlist-foreground: #ffffff;
+  --selected-border: #ffffff;
+  --btn-minus: #0a0a0c;
+  --btn-plus: #e65e29;
+  --bottom-nav: linear-gradient(
+    184.6deg,
+    rgba(6, 6, 6, 0) 0.98%,
+    #060606 41.19%
+  );
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-poppins: "Poppins", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-success: var(--success);
+  --color-star: var(--star);
+  --color-destructive: var(--destructive);
+  --color-muted: var(--muted);
+  --color-muted-variant: var(--muted-variant);
+  --color-icon-foreground: var(--icon-foreground);
+
+  --color-best-seller: var(--best-seller);
+  --color-wishlist: var(--wishlist);
+  --color-wishlist-foreground: var(--wishlist-foreground);
+  --color-selected-border: var(--selected-border);
+  --color-btn-minus: var(--btn-minus);
+}
+
+@layer base {
+  body {
+    @apply bg-[#dddddd] text-foreground font-poppins;
+  }
+}
+
+@layer components {
+  .bg-btn-plus {
+    background: var(--btn-plus);
+  }
+
+  .bg-bottom-nav {
+    background: var(--bottom-nav);
+  }
+}
