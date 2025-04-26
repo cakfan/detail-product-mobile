@@ -352,6 +352,9 @@
   .max-w-\[640px\] {
     max-width: 640px;
   }
+  .min-w-\[161px\] {
+    min-width: 161px;
+  }
   .flex-1 {
     flex: 1;
   }
@@ -506,8 +509,14 @@
   .mask-no-repeat {
     mask-repeat: no-repeat;
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
+  }
+  .object-top {
+    object-position: top;
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);

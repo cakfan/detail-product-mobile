@@ -64,21 +64,25 @@
           <img
             src="./assets/images/thumbnails/product-1.png"
             alt="Product 1"
-            class="absolute left-0 top-0 h-full w-full object-cover overflow-clip"
+            class="absolute left-0 top-0 h-full w-full object-top object-contain overflow-clip"
           />
         </div>
-        <div class="h-[127px] w-[161px] bg-muted rounded-[25px] overflow-clip">
+        <div
+          class="h-[127px] min-w-[161px] bg-muted rounded-[25px] overflow-clip"
+        >
           <img
             src="./assets/images/thumbnails/product-2.png"
             alt="product 2"
-            class="h-full w-full object-cover"
+            class="h-full w-full object-top object-contain"
           />
         </div>
-        <div class="h-[127px] w-[161px] bg-muted rounded-[25px] overflow-clip">
+        <div
+          class="h-[127px] min-w-[161px] bg-muted rounded-[25px] overflow-clip"
+        >
           <img
             src="./assets/images/thumbnails/product-3.png"
             alt="product 2"
-            class="h-full w-full object-cover"
+            class="h-full w-full object-top object-contain"
           />
         </div>
       </div>
@@ -301,7 +305,10 @@
         </div>
         <div class="mt-3 flex flex-col gap-3">
           <h3 class="text-[20px] leading-normal font-bold">Description</h3>
-          <p id="description" class="text-[14px] leading-5 font-medium">
+          <p
+            id="description"
+            class="text-[14px] leading-5 font-medium text-muted-variant"
+          >
             <span id="short-text">
               A cotton T-Shirt is a must-have for its softness, breathability,
               and effortless style, ideal for any season, it keeps you cool in
@@ -316,7 +323,7 @@
             </span>
             <button
               id="toggle-button"
-              class="font-bold cursor-pointer"
+              class="font-bold cursor-pointer text-foreground"
               onclick="toggleText()"
             >
               Learn More
