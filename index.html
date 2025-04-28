@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark bg-[#dddddd]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Product</title>
 
     <link href="./output.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <main class="relative bg-background max-w-[640px] h-auto mx-auto">
+    <main class="relative">
       <header
         class="px-8 py-3.5 flex items-center justify-between bg-background"
       >
@@ -40,7 +46,7 @@
         <div
           class="relative bg-muted h-[159px] col-span-full rounded-[25px] overflow-clip"
         >
-          <div class="flex justify-between">
+          <div class="z-50 flex justify-between">
             <div
               class="w-fit ml-[22px] mt-[19px] flex gap-[5px] px-2.5 py-[3px] items-center bg-best-seller rounded-[50px]"
             >
@@ -86,42 +92,47 @@
           />
         </div>
       </div>
-      <div class="mt-4 pl-[34px] pr-[30px] pb-[183px] flex flex-col">
-        <div class="flex items-center gap-0.5">
-          <h2 class="flex-1 text-[20px] line-clamp-1 font-bold leading-normal">
-            Cotton Hoodie
-          </h2>
-          <div class="flex gap-[7px] items-center">
-            <p class="text-[20px] line-clamp-1 font-bold leading-normal">
-              $86.00
-            </p>
-            <p class="text-[16px] leading-normal text-destructive line-through">
-              $100.00
+      <div class="mt-4 pl-[34px] pr-[30px] flex flex-col">
+        <div class="flex items-start gap-0.5">
+          <div class="flex-1 flex flex-col">
+            <h2 class="text-[20px] font-bold leading-normal">Cotton Hoodie</h2>
+            <p
+              class="flex-1 text-[14px] leading-normal text-black/20 dark:text-white/80"
+            >
+              Outerwear Men
             </p>
           </div>
-        </div>
-        <div class="flex items-center gap-0.5">
-          <p class="flex-1 text-[14px] leading-normal text-foreground/80">
-            Outerwear Men
-          </p>
-          <div class="flex items-center gap-1">
-            <p class="text-[16px] leading-normal text-foreground/50">(4.0)</p>
-            <div class="flex">
-              <div
-                class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star-muted"
-              ></div>
-              <div
-                class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
-              ></div>
-              <div
-                class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
-              ></div>
-              <div
-                class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
-              ></div>
-              <div
-                class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
-              ></div>
+          <div class="flex flex-col">
+            <div class="flex gap-[7px] items-center">
+              <p class="text-[20px] line-clamp-1 font-bold leading-normal">
+                $86.00
+              </p>
+              <p
+                class="text-[16px] animate-pulse leading-normal text-destructive line-through"
+              >
+                $100.00
+              </p>
+            </div>
+
+            <div class="flex items-center gap-1">
+              <p class="text-[16px] leading-normal text-foreground/50">(4.0)</p>
+              <div class="flex">
+                <div
+                  class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star-muted"
+                ></div>
+                <div
+                  class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
+                ></div>
+                <div
+                  class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
+                ></div>
+                <div
+                  class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
+                ></div>
+                <div
+                  class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
@@ -228,9 +239,10 @@
                 />
                 <label
                   for="size1"
-                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full btn-size text-foreground peer-checked:text-white hover:text-white cursor-pointer transition-all duration-300"
-                  >S</label
+                  class="size-btn peer-checked:bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)] peer-checked:text-white dark:peer-checked:bg-none dark:hover:bg-none dark:peer-checked:bg-primary"
                 >
+                  S
+                </label>
               </li>
               <li>
                 <input
@@ -242,7 +254,7 @@
                 />
                 <label
                   for="size2"
-                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full btn-size text-foreground peer-checked:text-white hover:text-white cursor-pointer transition-all duration-300"
+                  class="size-btn peer-checked:bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)] peer-checked:text-white dark:peer-checked:bg-none dark:hover:bg-none dark:peer-checked:bg-primary"
                   >M</label
                 >
               </li>
@@ -257,7 +269,7 @@
                 />
                 <label
                   for="size3"
-                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full btn-size text-foreground peer-checked:text-white hover:text-white cursor-pointer transition-all duration-300"
+                  class="size-btn peer-checked:bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)] peer-checked:text-white dark:peer-checked:bg-none dark:hover:bg-none dark:peer-checked:bg-primary"
                   >L</label
                 >
               </li>
@@ -271,7 +283,7 @@
                 />
                 <label
                   for="size4"
-                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full btn-size text-foreground peer-checked:text-white hover:text-white cursor-pointer transition-all duration-300"
+                  class="size-btn peer-checked:bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)] peer-checked:text-white dark:peer-checked:bg-none dark:hover:bg-none dark:peer-checked:bg-primary"
                   >XL</label
                 >
               </li>
@@ -295,7 +307,7 @@
               </p>
               <button
                 type="button"
-                class="increase h-[30px] w-[30px] bg-btn-plus rounded-full flex items-center justify-center cursor-pointer shrink-0"
+                class="increase h-[30px] w-[30px] bg-primary hover:bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)] transition-all duration-300 rounded-full flex items-center justify-center cursor-pointer shrink-0"
               >
                 <div
                   class="h-[25px] w-[25px] mask-[url('./assets/images/icons/plus.svg')] mask-no-repeat mask-contain bg-white"
@@ -333,23 +345,34 @@
         </div>
         <div class="mt-4">
           <h3 class="text-[20px] leading-normal font-bold">Product Reviews</h3>
-          <div class="mt-2.5 flex">
-            <p
-              class="bg-muted rounded-[50px] text-muted-variant p-2.5 text-[14px] leading-normal font-semibold"
-            >
-              Great (3)
-            </p>
-            <p
-              class="bg-muted rounded-[50px] text-muted-variant ml-[7px] mr-[5px] p-2.5 text-[14px] leading-normal font-semibold"
-            >
-              Comfortable (10)
-            </p>
-            <p
-              class="bg-muted rounded-[50px] text-muted-variant p-2.5 text-[14px] leading-normal font-semibold"
-            >
-              Fitted (12)
-            </p>
+          <!-- Swiper wrapper -->
+          <div class="swiper mySwiper mt-2.5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !w-auto">
+                <p
+                  class="select-none w-fit bg-muted dark:text-white rounded-[50px] text-muted-variant p-2.5 text-[14px] leading-normal font-semibold"
+                >
+                  Great (3)
+                </p>
+              </div>
+              <div class="swiper-slide !w-auto">
+                <p
+                  class="select-none w-fit bg-muted dark:text-white rounded-[50px] text-muted-variant ml-[7px] mr-[5px] p-2.5 text-[14px] leading-normal font-semibold"
+                >
+                  Comfortable (10)
+                </p>
+              </div>
+              <div class="swiper-slide !w-auto">
+                <p
+                  class="select-none w-fit bg-muted dark:text-white rounded-[50px] text-muted-variant p-2.5 text-[14px] leading-normal font-semibold"
+                >
+                  Fitted (12)
+                </p>
+              </div>
+              <!-- Tambahkan swiper-slide lagi kalau mau -->
+            </div>
           </div>
+
           <div class="mt-[30px] flex flex-col gap-5">
             <!-- user 1 -->
             <div class="flex flex-col gap-2.5">
@@ -358,7 +381,7 @@
                   <img
                     src="./assets/images/thumbnails/user-1.png"
                     alt=""
-                    class="h-[50px] w-[50px] rounded-full overflow-clip shrink-0"
+                    class="h-[50px] w-[50px] rounded-full overflow-clip shrink-0 object-cover"
                   />
                   <div class="flex flex-col">
                     <p class="text-[16px] leading-normal font-bold">
@@ -417,7 +440,7 @@
                   <img
                     src="./assets/images/thumbnails/user-2.png"
                     alt=""
-                    class="h-[50px] w-[50px] rounded-full overflow-clip shrink-0"
+                    class="h-[50px] w-[50px] rounded-full overflow-clip shrink-0 object-cover"
                   />
                   <div class="flex flex-col">
                     <p class="text-[16px] leading-normal font-bold">
@@ -476,7 +499,7 @@
                   <img
                     src="./assets/images/thumbnails/user-3.png"
                     alt=""
-                    class="h-[50px] w-[50px] rounded-full overflow-clip shrink-0"
+                    class="h-[50px] w-[50px] rounded-full overflow-clip shrink-0 object-cover"
                   />
                   <div class="flex flex-col">
                     <p class="text-[16px] leading-normal font-bold">
@@ -533,11 +556,11 @@
 
       <!-- bottom nav -->
       <form
-        class="fixed bottom-0 left-1/2 -translate-x-1/2 h-[183px] w-full max-w-[640px] bg-bottom-nav grid grid-cols-2 gap-3.5 items-end pl-[31px] pr-[33px] pb-5"
+        class="sticky z-50 bottom-0 h-[183px] w-full max-w-[640px] bg-bottom-nav grid grid-cols-2 gap-3.5 items-end pl-[31px] pr-[33px] pb-5"
       >
         <button
           type="submit"
-          class="flex gap-2.5 items-center justify-center transition-all duration-300 cursor-pointer bg-btn-plus h-[50px] rounded-[50px] p-2.5 text-white"
+          class="flex gap-2.5 items-center justify-center transition-all duration-300 cursor-pointer bg-primary hover:bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)] h-[50px] rounded-[50px] p-2.5 text-white"
         >
           <img
             src="./assets/images/icons/cart.svg"
@@ -557,6 +580,8 @@
         </button>
       </form>
     </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
