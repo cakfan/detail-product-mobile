@@ -11,7 +11,7 @@
   --destructive: #c51823;
   --muted: hsl(0, 0%, 97%);
   --muted-variant: #0000004d;
-  --s-muted: 0 4px 10px 0 rgba(247, 247, 247, 0.8);
+  --s-muted: 0 4px 10px 0 rgba(247, 247, 247, 0.98);
   --icon-foreground: #747474;
 
   --best-seller: #ffffff;
@@ -40,7 +40,7 @@
   --destructive: #ff0010;
   --muted: #1d1d21;
   --muted-variant: #ffffffcc;
-  --s-muted: 0 4px 10px 0 rgba(29, 29, 33, 0.8);
+  --s-muted: 0 4px 10px 0 rgba(29, 29, 33, 0.98);
   --icon-foreground: #ffffff;
 
   --best-seller: #00ff080d;
