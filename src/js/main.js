@@ -46,3 +46,24 @@ function toggleText() {
     toggleBtn.textContent = "Learn Less";
   }
 }
+
+// counter
+
+const counter = document.getElementById("counter");
+const countElement = counter.querySelector(".count");
+const decreaseBtn = counter.querySelector(".decrease");
+const increaseBtn = counter.querySelector(".increase");
+
+let count = 1;
+
+decreaseBtn.addEventListener("click", () => {
+  if (count > 1) {
+    count--;
+    countElement.textContent = count;
+  }
+});
+
+increaseBtn.addEventListener("click", () => {
+  count++;
+  countElement.textContent = count;
+});
