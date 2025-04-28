@@ -92,7 +92,7 @@
   }
 
   .size-btn {
-    @apply flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-black/40
+    @apply flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-black/40 dark:text-foreground
     hover:bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)]
     hover:text-white
     dark:hover:bg-primary
