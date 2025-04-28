@@ -82,7 +82,7 @@
 
 @layer base {
   body {
-    @apply bg-background h-full mx-auto max-w-[640px] text-foreground font-poppins;
+    @apply bg-background h-screen mx-auto max-w-[640px] text-foreground font-poppins;
   }
 }
 
