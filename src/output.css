@@ -647,6 +647,12 @@
       color: color-mix(in oklab, var(--color-black) 20%, transparent);
     }
   }
+  .text-black\/40 {
+    color: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+  }
   .text-destructive {
     color: var(--destructive);
   }
