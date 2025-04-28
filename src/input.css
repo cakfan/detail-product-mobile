@@ -82,24 +82,29 @@
 
 @layer base {
   body {
-    @apply bg-[#dddddd] text-foreground font-poppins;
+    @apply bg-background h-full mx-auto max-w-[640px] text-foreground font-poppins;
   }
 }
 
 @layer components {
   .bg-btn-plus {
-    @apply bg-primary;
+    @apply bg-primary transition-all duration-300;
   }
 
-  .btn-size {
-    @apply bg-muted;
+  .size-btn {
+    @apply flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-black/40
+    hover:bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)]
+    hover:text-white
+    dark:hover:bg-primary
+    cursor-pointer transition-all duration-300;
   }
 
-  .bg-btn-plus:hover,
-  .btn-size:hover,
-  input[name="size"]:checked + label {
-    background-image: var(--btn-plus);
-    color: #ffffff;
+  .peer:checked ~ .size-btn {
+    @apply bg-[linear-gradient(121.48deg,_#e9c053_18.72%,_#ff7d75_73.08%)] text-white;
+  }
+
+  .dark .peer:checked ~ .size-btn {
+    @apply bg-primary text-white;
   }
 
   .bg-bottom-nav {

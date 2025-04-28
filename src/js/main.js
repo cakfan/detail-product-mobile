@@ -67,3 +67,10 @@ increaseBtn.addEventListener("click", () => {
   count++;
   countElement.textContent = count;
 });
+
+// swiper
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto", // ini supaya fleksibel, lebar item menyesuaikan
+  spaceBetween: 10, // jarak antar item
+  freeMode: true, // supaya bisa scroll bebas
+});
