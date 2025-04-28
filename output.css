@@ -631,11 +631,6 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
-  .peer-checked\:bg-primary {
-    &:is(:where(.peer):checked ~ *) {
-      background-color: var(--primary);
-    }
-  }
   .peer-checked\:text-white {
     &:is(:where(.peer):checked ~ *) {
       color: var(--color-white);
@@ -645,13 +640,6 @@
     &:is(:where(.peer):checked ~ *) {
       --tw-shadow: inset 0 0 0 2px var(--tw-shadow-color, currentColor);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    }
-  }
-  .hover\:bg-primary {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--primary);
-      }
     }
   }
   .hover\:text-white {
@@ -745,8 +733,12 @@
   .bg-btn-plus {
     background-color: var(--primary);
   }
-  .bg-btn-plus:hover {
+  .btn-size {
+    background-color: var(--muted);
+  }
+  .bg-btn-plus:hover, .btn-size:hover, input[name="size"]:checked + label {
     background-image: var(--btn-plus);
+    color: #ffffff;
   }
   .bg-bottom-nav {
     background: var(--bottom-nav);

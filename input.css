@@ -91,8 +91,15 @@
     @apply bg-primary;
   }
 
-  .bg-btn-plus:hover {
+  .btn-size {
+    @apply bg-muted;
+  }
+
+  .bg-btn-plus:hover,
+  .btn-size:hover,
+  input[name="size"]:checked + label {
     background-image: var(--btn-plus);
+    color: #ffffff;
   }
 
   .bg-bottom-nav {
