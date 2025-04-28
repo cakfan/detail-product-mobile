@@ -71,6 +71,5 @@ increaseBtn.addEventListener("click", () => {
 // swiper
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto", // ini supaya fleksibel, lebar item menyesuaikan
-  spaceBetween: 10, // jarak antar item
   freeMode: true, // supaya bisa scroll bebas
 });
