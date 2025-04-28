@@ -14,9 +14,9 @@
     />
   </head>
   <body>
-    <main class="relative bg-background">
+    <main class="relative bg-background pt-[78px]">
       <header
-        class="px-8 py-3.5 flex items-center justify-between bg-background"
+        class="fixed z-50 w-full max-w-[640px] top-0 left-1/2 -translate-x-1/2 px-8 py-3.5 flex items-center justify-between bg-background"
       >
         <a
           href="#"
@@ -48,7 +48,7 @@
         >
           <div class="flex justify-between">
             <div
-              class="z-50 w-fit ml-[22px] mt-[19px] flex gap-[5px] px-2.5 py-[3px] items-center bg-best-seller rounded-[50px]"
+              class="z-40 w-fit ml-[22px] mt-[19px] flex gap-[5px] px-2.5 py-[3px] items-center bg-best-seller rounded-[50px]"
             >
               <div
                 class="h-[15px] w-[15px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-success"
@@ -60,7 +60,7 @@
             </div>
             <button
               type="button"
-              class="z-50 mt-3.5 mr-[17px] h-[25px] w-[25px] flex items-center justify-center rounded-full bg-wishlist"
+              class="z-40 mt-3.5 mr-[17px] h-[25px] w-[25px] flex items-center justify-center rounded-full bg-wishlist"
             >
               <div
                 class="h-[13px] w-[15px] mask-[url('./assets/images/icons/love.svg')] mask-no-repeat mask-contain bg-wishlist-foreground"
@@ -349,7 +349,7 @@
             </button>
           </p>
         </div>
-        <div class="mt-4 pb-[149px]">
+        <div class="mt-4 pb-[183px]">
           <h3 class="text-[20px] pl-[34px] pr-[30px] leading-normal font-bold">
             Product Reviews
           </h3>
@@ -564,7 +564,7 @@
 
       <!-- bottom nav -->
       <form
-        class="fixed z-50 bottom-0 left-1/2 -translate-x-1/2 h-[149px] w-full max-w-[640px] bg-bottom-nav grid grid-cols-2 gap-3.5 items-end pl-[31px] pr-[33px] pb-5"
+        class="fixed z-50 bottom-0 left-1/2 -translate-x-1/2 h-[183px] w-full max-w-[640px] bg-bottom-nav grid grid-cols-2 gap-3.5 items-end pl-[31px] pr-[33px] pb-[54px]"
       >
         <button
           type="submit"
