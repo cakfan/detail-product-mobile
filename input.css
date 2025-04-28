@@ -7,9 +7,11 @@
   --primary: #e65e29;
   --success: #00b906;
   --star: #ffb900;
+  --star-muted: #00000033;
   --destructive: #c51823;
-  --muted: #f7f7f7;
+  --muted: hsl(0, 0%, 97%);
   --muted-variant: #0000004d;
+  --s-muted: 0 4px 10px 0 rgba(247, 247, 247, 0.98);
   --icon-foreground: #747474;
 
   --best-seller: #ffffff;
@@ -34,9 +36,11 @@
   --primary: #e65e29;
   --success: #00ff09;
   --star: #f5d100;
+  --star-muted: #ffffff;
   --destructive: #ff0010;
   --muted: #1d1d21;
   --muted-variant: #ffffffcc;
+  --s-muted: 0 4px 10px 0 rgba(29, 29, 33, 0.98);
   --icon-foreground: #ffffff;
 
   --best-seller: #00ff080d;
@@ -44,7 +48,7 @@
   --wishlist-foreground: #ffffff;
   --selected-border: #ffffff;
   --btn-minus: #0a0a0c;
-  --btn-plus: #e65e29;
+  /* --btn-plus: #e65e29; */
   --bottom-nav: linear-gradient(
     184.6deg,
     rgba(6, 6, 6, 0) 0.98%,
@@ -61,6 +65,7 @@
   --color-primary: var(--primary);
   --color-success: var(--success);
   --color-star: var(--star);
+  --color-star-muted: var(--star-muted);
   --color-destructive: var(--destructive);
   --color-muted: var(--muted);
   --color-muted-variant: var(--muted-variant);
@@ -71,6 +76,8 @@
   --color-wishlist-foreground: var(--wishlist-foreground);
   --color-selected-border: var(--selected-border);
   --color-btn-minus: var(--btn-minus);
+
+  --shadow-muted: var(--s-muted);
 }
 
 @layer base {
@@ -81,7 +88,11 @@
 
 @layer components {
   .bg-btn-plus {
-    background: var(--btn-plus);
+    @apply bg-primary;
+  }
+
+  .bg-btn-plus:hover {
+    background-image: var(--btn-plus);
   }
 
   .bg-bottom-nav {

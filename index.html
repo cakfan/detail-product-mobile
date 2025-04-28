@@ -14,7 +14,7 @@
       >
         <a
           href="#"
-          class="h-[50px] w-[50px] rounded-full bg-muted flex items-center justify-center"
+          class="h-[50px] w-[50px] rounded-full bg-muted flex items-center justify-center hover:shadow-muted transition-all duration-300"
         >
           <div
             class="h-2.5 w-4 mask-[url('./assets/images/icons/arrow-back.svg')] mask-no-repeat mask-contain bg-icon-foreground"
@@ -27,14 +27,14 @@
           Details Product
         </h1>
 
-        <button
-          type="button"
-          class="h-[50px] w-[50px] rounded-full bg-muted flex items-center justify-center"
+        <a
+          href="#"
+          class="h-[50px] w-[50px] rounded-full bg-muted flex items-center justify-center hover:shadow-muted transition-all duration-300"
         >
           <div
             class="h-4 w-1 mask-[url('./assets/images/icons/info.svg')] mask-no-repeat mask-contain bg-icon-foreground"
           ></div>
-        </button>
+        </a>
       </header>
       <div class="px-8 grid grid-cols-2 gap-4">
         <div
@@ -64,21 +64,25 @@
           <img
             src="./assets/images/thumbnails/product-1.png"
             alt="Product 1"
-            class="absolute left-0 top-0 h-full w-full object-cover overflow-clip"
+            class="absolute left-0 top-0 h-full w-full object-top object-contain overflow-clip"
           />
         </div>
-        <div class="h-[127px] w-[161px] bg-muted rounded-[25px] overflow-clip">
+        <div
+          class="h-[127px] min-w-[161px] bg-muted rounded-[25px] overflow-clip"
+        >
           <img
             src="./assets/images/thumbnails/product-2.png"
             alt="product 2"
-            class="h-full w-full object-cover"
+            class="h-full w-full object-top object-contain"
           />
         </div>
-        <div class="h-[127px] w-[161px] bg-muted rounded-[25px] overflow-clip">
+        <div
+          class="h-[127px] min-w-[161px] bg-muted rounded-[25px] overflow-clip"
+        >
           <img
             src="./assets/images/thumbnails/product-3.png"
             alt="product 2"
-            class="h-full w-full object-cover"
+            class="h-full w-full object-top object-contain"
           />
         </div>
       </div>
@@ -104,7 +108,7 @@
             <p class="text-[16px] leading-normal text-foreground/50">(4.0)</p>
             <div class="flex">
               <div
-                class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-foreground"
+                class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star-muted"
               ></div>
               <div
                 class="h-[20px] w-[20px] mask-[url('./assets/images/icons/star.svg')] mask-no-repeat mask-contain bg-star"
@@ -137,7 +141,7 @@
                 />
                 <label
                   for="color1"
-                  class="block h-10 w-10 rounded-[10px] bg-primary text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] cursor-pointer transition-all duration-300"
+                  class="block h-10 w-10 rounded-[10px] bg-primary text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] hover:ring-2 hover:ring-primary cursor-pointer transition-all duration-300"
                 ></label>
               </li>
               <li>
@@ -150,7 +154,7 @@
                 />
                 <label
                   for="color2"
-                  class="block h-10 w-10 rounded-[10px] bg-[#C51823] text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] cursor-pointer transition-all duration-300"
+                  class="block h-10 w-10 rounded-[10px] bg-[#C51823] text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] hover:ring-2 hover:ring-primary cursor-pointer transition-all duration-300"
                 ></label>
               </li>
               <li>
@@ -163,7 +167,7 @@
                 />
                 <label
                   for="color3"
-                  class="block h-10 w-10 rounded-[10px] bg-[#EEC51A] text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] cursor-pointer transition-all duration-300"
+                  class="block h-10 w-10 rounded-[10px] bg-[#EEC51A] text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] hover:ring-2 hover:ring-primary cursor-pointer transition-all duration-300"
                 ></label>
               </li>
               <li>
@@ -176,7 +180,7 @@
                 />
                 <label
                   for="color4"
-                  class="block h-10 w-10 rounded-[10px] bg-[#11859F] text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] cursor-pointer transition-all duration-300"
+                  class="block h-10 w-10 rounded-[10px] bg-[#11859F] text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] hover:ring-2 hover:ring-primary cursor-pointer transition-all duration-300"
                 ></label>
               </li>
 
@@ -191,7 +195,7 @@
                 />
                 <label
                   for="color5"
-                  class="block h-10 w-10 rounded-[10px] bg-success text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] cursor-pointer transition-all duration-300"
+                  class="block h-10 w-10 rounded-[10px] bg-success text-selected-border peer-checked:shadow-[inset_0_0_0_2px_currentColor] hover:ring-2 hover:ring-primary cursor-pointer transition-all duration-300"
                 ></label>
               </li>
             </ul>
@@ -200,7 +204,7 @@
             <button
               type="button"
               id="show-more-btn"
-              class="h-10 w-10 bg-muted rounded-full cursor-pointer flex items-center justify-center transition-transform duration-300"
+              class="h-10 w-10 bg-muted rounded-full cursor-pointer flex items-center justify-center hover:shadow-muted transition-all duration-300"
               aria-expanded="false"
             >
               <div
@@ -224,7 +228,7 @@
                 />
                 <label
                   for="size1"
-                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-foreground peer-checked:bg-primary peer-checked:text-white cursor-pointer transition-all duration-300"
+                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-foreground peer-checked:bg-primary peer-checked:text-white hover:bg-primary hover:text-white cursor-pointer transition-all duration-300"
                   >S</label
                 >
               </li>
@@ -238,7 +242,7 @@
                 />
                 <label
                   for="size2"
-                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-foreground peer-checked:bg-primary peer-checked:text-white cursor-pointer transition-all duration-300"
+                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-foreground peer-checked:bg-primary peer-checked:text-white hover:bg-primary hover:text-white cursor-pointer transition-all duration-300"
                   >M</label
                 >
               </li>
@@ -253,7 +257,7 @@
                 />
                 <label
                   for="size3"
-                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-foreground peer-checked:bg-primary peer-checked:text-white cursor-pointer transition-all duration-300"
+                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-foreground peer-checked:bg-primary peer-checked:text-white hover:bg-primary hover:text-white cursor-pointer transition-all duration-300"
                   >L</label
                 >
               </li>
@@ -267,30 +271,31 @@
                 />
                 <label
                   for="size4"
-                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-foreground peer-checked:bg-primary peer-checked:text-white cursor-pointer transition-all duration-300"
+                  class="flex items-center justify-center text-[14px] leading-normal font-semibold h-10 w-10 rounded-full bg-muted text-foreground peer-checked:bg-primary peer-checked:text-white hover:bg-primary hover:text-white cursor-pointer transition-all duration-300"
                   >XL</label
                 >
               </li>
             </ul>
             <div
               class="h-10 w-[98px] bg-muted rounded-[50px] pl-[7px] pr-[5px] py-[5px] flex items-center"
+              id="counter"
             >
               <button
                 type="button"
-                class="h-[30px] w-[30px] bg-btn-minus rounded-full flex items-center justify-center cursor-pointer"
+                class="decrease h-[30px] w-[30px] bg-btn-minus rounded-full flex items-center justify-center cursor-pointer hover:shadow-muted transition-all duration-300 shrink-0"
               >
                 <div
                   class="h-[25px] w-[25px] mask-[url('./assets/images/icons/minus.svg')] mask-no-repeat mask-contain bg-foreground"
                 ></div>
               </button>
               <p
-                class="ml-[9px] mr-[11px] text-[14px] leading-normal font-bold text-foreground"
+                class="count ml-[9px] mr-[11px] text-[14px] leading-normal font-bold text-foreground"
               >
                 1
               </p>
               <button
                 type="button"
-                class="h-[30px] w-[30px] bg-btn-plus rounded-full flex items-center justify-center cursor-pointer"
+                class="increase h-[30px] w-[30px] bg-btn-plus rounded-full flex items-center justify-center cursor-pointer shrink-0"
               >
                 <div
                   class="h-[25px] w-[25px] mask-[url('./assets/images/icons/plus.svg')] mask-no-repeat mask-contain bg-white"
@@ -301,7 +306,10 @@
         </div>
         <div class="mt-3 flex flex-col gap-3">
           <h3 class="text-[20px] leading-normal font-bold">Description</h3>
-          <p id="description" class="text-[14px] leading-5 font-medium">
+          <p
+            id="description"
+            class="text-[14px] leading-5 font-medium text-muted-variant"
+          >
             <span id="short-text">
               A cotton T-Shirt is a must-have for its softness, breathability,
               and effortless style, ideal for any season, it keeps you cool in
@@ -316,7 +324,7 @@
             </span>
             <button
               id="toggle-button"
-              class="font-bold cursor-pointer"
+              class="font-bold cursor-pointer text-foreground"
               onclick="toggleText()"
             >
               Learn More
@@ -326,15 +334,19 @@
         <div class="mt-4">
           <h3 class="text-[20px] leading-normal font-bold">Product Reviews</h3>
           <div class="mt-2.5 flex">
-            <p class="p-2.5 text-[14px] leading-normal font-semibold">
+            <p
+              class="bg-muted rounded-[50px] text-muted-variant p-2.5 text-[14px] leading-normal font-semibold"
+            >
               Great (3)
             </p>
             <p
-              class="ml-[7px] mr-[5px] p-2.5 text-[14px] leading-normal font-semibold"
+              class="bg-muted rounded-[50px] text-muted-variant ml-[7px] mr-[5px] p-2.5 text-[14px] leading-normal font-semibold"
             >
               Comfortable (10)
             </p>
-            <p class="p-2.5 text-[14px] leading-normal font-semibold">
+            <p
+              class="bg-muted rounded-[50px] text-muted-variant p-2.5 text-[14px] leading-normal font-semibold"
+            >
               Fitted (12)
             </p>
           </div>
@@ -520,12 +532,12 @@
       </div>
 
       <!-- bottom nav -->
-      <div
-        class="fixed bottom-0 left-1/2 -translate-x-1/2 h-[183px] w-full max-w-[640px] bg-bottom-nav flex justify-center4332 gap-3.5 items-end pl-[31px] pr-[33px] pb-5"
+      <form
+        class="fixed bottom-0 left-1/2 -translate-x-1/2 h-[183px] w-full max-w-[640px] bg-bottom-nav grid grid-cols-2 gap-3.5 items-end pl-[31px] pr-[33px] pb-5"
       >
         <button
-          type="button"
-          class="flex gap-2.5 items-center justify-center bg-btn-plus h-[50px] w-[162px] rounded-[50px] p-2.5 text-white"
+          type="submit"
+          class="flex gap-2.5 items-center justify-center transition-all duration-300 cursor-pointer bg-btn-plus h-[50px] rounded-[50px] p-2.5 text-white"
         >
           <img
             src="./assets/images/icons/cart.svg"
@@ -536,14 +548,14 @@
         </button>
         <button
           type="button"
-          class="flex gap-2.5 items-center bg-muted justify-center h-[50px] w-[162px] rounded-[50px] p-2.5"
+          class="flex gap-2.5 items-center bg-muted justify-center h-[50px] rounded-[50px] p-2.5 cursor-pointer hover:shadow-muted"
         >
           <div
             class="h-6 w-6 shrink-0 mask-[url('./assets/images/icons/plus.svg')] mask-no-repeat mask-contain bg-foreground"
           ></div>
           <span class="text-[14px] leading-5 font-medium">Add To Cart</span>
         </button>
-      </div>
+      </form>
     </main>
     <script src="./js/main.js"></script>
   </body>
