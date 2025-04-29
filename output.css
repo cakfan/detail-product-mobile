@@ -738,6 +738,13 @@
       }
     }
   }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
   .hover\:shadow-muted {
     &:hover {
       @media (hover: hover) {
