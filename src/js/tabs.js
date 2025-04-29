@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function clearActiveTabs() {
     tabs.forEach((tab) => {
-      tab.querySelector("p").classList.remove("text-black");
-      tab.querySelector("p").classList.add("text-black/40");
+      tab.querySelector("p").classList.remove("text-black", "dark:text-white");
+      tab
+        .querySelector("p")
+        .classList.add("text-black/40", "dark:text-white/40");
     });
   }
 
@@ -23,8 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
       hideAllContents();
 
       // Aktifkan tab yang diklik
-      tab.querySelector("p").classList.remove("text-black/40");
-      tab.querySelector("p").classList.add("text-black");
+      tab
+        .querySelector("p")
+        .classList.remove("text-black/40", "dark:text-white/40");
+      tab.querySelector("p").classList.add("text-black", "dark:text-white");
 
       // Tampilkan content yang cocok
       const contentToShow = document.querySelector(
@@ -41,8 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstTab = tabs[0];
     const firstTarget = firstTab.getAttribute("data-tab");
 
-    firstTab.querySelector("p").classList.remove("text-black/40");
-    firstTab.querySelector("p").classList.add("text-black");
+    firstTab
+      .querySelector("p")
+      .classList.remove("text-black/40", "dark:text-white/40");
+    firstTab.querySelector("p").classList.add("text-black", "dark:text-white");
 
     contents.forEach((content) => {
       content.style.display =
